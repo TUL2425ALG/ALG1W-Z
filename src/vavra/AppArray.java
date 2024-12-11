@@ -13,13 +13,12 @@ public class AppArray {
         Scanner sc = new Scanner(System.in);
         boolean cond = true;
         while(cond){
-            System.out.println("Pokracujeme ve zpracovani (a/n)");
+            System.out.println("Pokračujeme ve zpracování (a/n)");
             String test = sc.next();
-            System.out.println(test);
             if(test.charAt(0) == 'n' || test.charAt(0) == 'N'){
                 break;
             }
-            System.out.println("PocetHodnot: ");
+            System.out.println("Počet hodnot: ");
             int n = sc.nextInt();
             int[] nums = new int[n];
             System.out.println("Hodnoty: ");
