@@ -70,6 +70,7 @@ public class Marathon {
         Scanner sc = new Scanner(System.in);
         boolean cond = true;
         while(cond){
+            //Input
             System.out.println("Zadej pocet běžců: ");
             int n_runners = sc.nextInt();
             if(n_runners < 1){
@@ -89,11 +90,13 @@ public class Marathon {
             time_in_seconds[i] = toSec(h,min,sec) - start_sec;
             }
             //Methods.printAr(nums);
+            //Processing
             int[] perm = createPermutation(time_in_seconds);
             int[] sorted_time_in_seconds = sort(time_in_seconds, perm);
             int[] sorted_nums = sort(nums, perm);
             //Methods.printAr(sorted_time_in_seconds);
             //Methods.printAr(sorted_nums);
+            //Output
             printNumUnder2_07(sorted_time_in_seconds);
             printLastTwo(sorted_nums);
             printAverageMaxSpeed(sorted_time_in_seconds, track_len);

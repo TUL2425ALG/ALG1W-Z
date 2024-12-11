@@ -15,6 +15,7 @@ public class AppMatrix {
         Scanner sc = new Scanner(System.in);
         boolean cond = true;
         while(cond){
+            //Input
             System.out.println("Pokračujeme ve zpracování (a/n)");
             String test = sc.next();
             if(test.charAt(0) == 'n' || test.charAt(0) == 'N'){
@@ -31,6 +32,7 @@ public class AppMatrix {
             }
             System.out.println("Výsledná matice:");
             Methods.printAr(matrix);
+            //Processing Methods.arePositiveAndSumDiagonalsSame(matrix) + Output System.out.println(...)
             System.out.println(Methods.arePositiveAndSumDiagonalsSame(matrix) ? "Součty jsou stejné na obou diagonálách a všechna čísla jsou kladná" : "Součty nejsou stejné nebo nejsou všechna čísla kladná");
         }  
     }

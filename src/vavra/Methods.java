@@ -10,7 +10,7 @@ package vavra;
  */
 public class Methods {
     public static boolean arePositiveAndSumDiagonalsSame(int[][] matrix) { //matrix test 
-        for(int i = 0; i < matrix.length; i++){
+        for(int i = 0; i < matrix.length; i++){ //all positive
             for(int j = 0; j < matrix[i].length; j++){
                 if(matrix[i][j]<=0){
                     return false;
@@ -19,7 +19,7 @@ public class Methods {
         }
         int sum_main = 0;
         int sum_sub = 0;
-        for(int i = 0; i < matrix.length; i++){
+        for(int i = 0; i < matrix.length; i++){ //diagonals the same val
             sum_main = sum_main + matrix[i][i];
             sum_sub = sum_sub + matrix[matrix.length-1-i][i];
         }
@@ -43,7 +43,7 @@ public class Methods {
         return true;
     }
     
-    public static int[][] fillEven(int m, int n) {
+    public static int[][] fillEven(int m, int n) { //nasobky 3 napsanych do radku matice
         int num = 3;
         int[][] matrix = new int[m][n];
         for(int i = 0; i < m; i++){

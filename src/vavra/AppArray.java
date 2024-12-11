@@ -13,6 +13,7 @@ public class AppArray {
         Scanner sc = new Scanner(System.in);
         boolean cond = true;
         while(cond){
+            //Input
             System.out.println("Pokračujeme ve zpracování (a/n)");
             String test = sc.next();
             if(test.charAt(0) == 'n' || test.charAt(0) == 'N'){
@@ -26,6 +27,7 @@ public class AppArray {
             nums[i] = sc.nextInt();
             }
             System.out.println("Palindrom:");
+            //Processing is Methods.createPalindrom(nums); and Output is Methods.printAr(Methods.createPalindrom(nums));
             Methods.printAr(Methods.createPalindrom(nums));
         }  
     }

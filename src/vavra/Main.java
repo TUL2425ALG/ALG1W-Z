@@ -4,8 +4,6 @@
  */
 package vavra;
 
-import java.util.Random;
-import java.util.Scanner;
 /**
  *
  * @author Vavra-V-e4e5
@@ -13,6 +11,5 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
     }
 }
