@@ -7,6 +7,7 @@ package vavra;
 /**
  *
  * @author Vavra-V-e4e5
+ * Vojtech Vavra
  */
 public class Main {
     
