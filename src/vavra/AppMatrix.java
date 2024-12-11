@@ -13,27 +13,18 @@ import java.util.Scanner;
 public class AppMatrix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        boolean cond = true;
-        while(cond){
-            //Input
-            System.out.println("Pokračujeme ve zpracování (a/n)");
-            String test = sc.next();
-            if(test.charAt(0) == 'n' || test.charAt(0) == 'N'){
-                break;
-            }
-            System.out.println("Velikost čtvercové matice: ");
-            int n = sc.nextInt();
-            int[][] matrix = new int[n][n];
-            for(int i = 0; i < n; i++){
-            System.out.println("Hodnoty "+(i+1)+". řádku matice: ");
-            for(int j = 0; j < n; j++){
-            matrix[i][j] = sc.nextInt();
-            }
-            }
-            System.out.println("Výsledná matice:");
-            Methods.printAr(matrix);
-            //Processing Methods.arePositiveAndSumDiagonalsSame(matrix) + Output System.out.println(...)
-            System.out.println(Methods.arePositiveAndSumDiagonalsSame(matrix) ? "Součty jsou stejné na obou diagonálách a všechna čísla jsou kladná" : "Součty nejsou stejné nebo nejsou všechna čísla kladná");
-        }  
+        System.out.println("Velikost čtvercové matice: ");
+        int n = sc.nextInt();
+        int[][] matrix = new int[n][n];
+        for(int i = 0; i < n; i++){
+        System.out.println("Hodnoty "+(i+1)+". řádku matice: ");
+        for(int j = 0; j < n; j++){
+        matrix[i][j] = sc.nextInt();
+        }
+        }
+        System.out.println("Výsledná matice:");
+        Methods.printAr(matrix);
+        //Processing Methods.arePositiveAndSumDiagonalsSame(matrix) + Output System.out.println(...)
+        System.out.println(Methods.arePositiveAndSumDiagonalsSame(matrix) ? "Součty jsou stejné na obou diagonálách a všechna čísla jsou kladná" : "Součty nejsou stejné nebo nejsou všechna čísla kladná");
     }
 }
