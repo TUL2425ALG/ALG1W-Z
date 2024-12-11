@@ -17,7 +17,6 @@ public class AppMatrix {
         while(cond){
             System.out.println("Pokracujeme ve zpracovani (a/n)");
             String test = sc.next();
-            System.out.println(test);
             if(test.charAt(0) == 'n' || test.charAt(0) == 'N'){
                 break;
             }
