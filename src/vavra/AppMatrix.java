@@ -12,6 +12,7 @@ import java.util.Scanner;
  */
 public class AppMatrix {
     public static void main(String[] args) {
+        //Input
         Scanner sc = new Scanner(System.in);
         System.out.println("Velikost čtvercové matice: ");
         int n = sc.nextInt();
