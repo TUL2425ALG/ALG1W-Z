@@ -56,6 +56,9 @@ public class Marathon {
                             int[] tempSport = sportovci[i+1];
                             sportovci[i+1] = sportovci[i];
                             sportovci[i] = tempSport;
+                            
+                            
+                            poradi[i] = sportovci[i][0];
                         }
                     }
                 }
