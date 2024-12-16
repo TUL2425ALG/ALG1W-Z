@@ -37,23 +37,24 @@ public class Marathon {
                 int minuty = sc.nextInt();
                 int sekundy = sc.nextInt();
                 int cas = hodiny * 60 * 60 + minuty * 60 + sekundy;
-                if (cas - zacatek < rekord) {
+                if (cas - zacatek < rekord) { //JV je dobre si rozdil cas - zacatek ulozit do promenne, abyste ho dal v kodu nemusela znovu pocitat
                     pocetRekordmanu = pocetRekordmanu + 1;
                 }
 
                 if (cas - zacatek >= nejpomalejsiCas1) {
                     nejpomalejsiCas2 = nejpomalejsiCas1;
-                    nejpomalejsiCas1 = cisloBezce;
+                    nejpomalejsiCas1 = cisloBezce; //JV trochu mi nedava smysl, proc do casu ukladate cislo bezce
                 }
                 if (cas - zacatek >= nejpomalejsiCas2 && nejpomalejsiCas1 != cisloBezce) {
                     nejpomalejsiCas2 = cisloBezce;
                 }
-                if (nejrychlejsiBezec == 0) {
+                if (nejrychlejsiBezec == 0) { //JV netestovat v cyklu je to prvni prvek, je to prvni prvek - hledani minima nastavit pred cyklem: nejrychlejsiBezec = Double.MAX_VALUE, pak ho první bezec urcite prenastavi
                     nejrychlejsiBezec = cas - zacatek;
                 }
                 if (cas - zacatek < nejrychlejsiBezec) {
                     nejrychlejsiBezec = cas - zacatek;
-                    prumernaRychlost = trat / (cas - zacatek) * 3.6;
+                    prumernaRychlost = trat / (cas - zacatek) * 3.6; //JV dát az za do-while - neni potreba pocitat pri nacitani kazdého dalsiho bezce
+                                                                     //JV prumernaRychlost = trat / nejrychlejsi * 3.6
                 }
                 k = k + 1;
 

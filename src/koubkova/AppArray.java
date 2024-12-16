@@ -17,13 +17,13 @@ public class AppArray {
             }
             int[] palindom = createPalindom(posloupnost);
             for (int i = 0; i < palindom.length; i++) {
-                if (i == 0) {
+                if (i == 0) { //JV dat mimo for pro i == 0 vypise prvek
                     System.out.print("[" + palindom[i] + ", ");
                 }
-                if (i == palindom.length - 1) {
+                if (i == palindom.length - 1) { //JV dat mimo for
                     System.out.println(palindom[i] + "]");
                 } else {
-                    System.out.print(palindom[i] + ", ");
+                    System.out.print(palindom[i] + ", "); //JV i tohle vypise prvek pro i == 0
                 }
             }
             System.out.println("Zadej 0 pro ukončení programu.");
