@@ -34,10 +34,10 @@ public class Methods {
                 if(matice[i][j] < 0){
                     return false;
                 }
-                if(i == j){
+                if(i == j){ //JV lepsi by bylo testovat to mimo vnitrni for += matice[i][i]
                     soucetDiagonaly += matice[i][j];
                 }
-                if(matice.length-1-i == matice.length-1-j){
+                if(matice.length-1-i == matice.length-1-j){ //JV += matice[i][matice.length - 1 - i]
                     soucetVedDiagonaly += matice[i][matice.length-1-j];
                 }
             }

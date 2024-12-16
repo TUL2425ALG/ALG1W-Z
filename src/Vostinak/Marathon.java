@@ -49,14 +49,16 @@ public class Marathon {
                     rychly = bezecCislo[i];
                     maxVypocitany = vypocitanyCas[i];
                 }
+                //JV na zjisteni nejpomalejsich casu staci jeden pruchod pole, neni potreba vnoreny for 
                 for (int j = i + 1; j < pocet; j++) {
                     if (vypocitanyCas[i] > vypocitanyCas[j]) {
                         pomaly1 = bezecCislo[i];
                     } // druheho nejpomalejsiho bohuzel nevim
                 }
             }
+            System.out.println(rychly);
             
-            double rychlost = delkaTrate / (vypocitanyCas[rychly] / 3600);
+            double rychlost = delkaTrate / (vypocitanyCas[rychly] / 3600); //JV celociselne deleni dvou integru
 
             //output
             System.out.println(pocetPod + " bezci bezeli pod 2:07.");

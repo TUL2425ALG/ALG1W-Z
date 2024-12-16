@@ -11,17 +11,18 @@ import java.util.Scanner;
  * @author Vavra-V-e4e5
  */
 public class AppMatrix {
+
     public static void main(String[] args) {
         //Input
         Scanner sc = new Scanner(System.in);
         System.out.println("Velikost čtvercové matice: ");
         int n = sc.nextInt();
         int[][] matrix = new int[n][n];
-        for(int i = 0; i < n; i++){
-        System.out.println("Hodnoty "+(i+1)+". řádku matice: ");
-        for(int j = 0; j < n; j++){
-        matrix[i][j] = sc.nextInt();
-        }
+        for (int i = 0; i < n; i++) {
+            System.out.println("Hodnoty " + (i + 1) + ". řádku matice: ");
+            for (int j = 0; j < n; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
         }
         System.out.println("Výsledná matice:");
         Methods.printAr(matrix);

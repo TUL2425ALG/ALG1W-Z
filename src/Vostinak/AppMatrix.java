@@ -19,7 +19,7 @@ public class AppMatrix {
         
         for(int i = 0; i < matice.length; i++){
             for(int j = 0; j < matice.length; j++){
-                System.out.print(matice[i][j] + " ");
+                System.out.print(matice[i][j] + " "); //JV chybi zarovnani
             }
             System.out.println("");
         }
