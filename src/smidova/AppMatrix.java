@@ -9,8 +9,8 @@ public class AppMatrix {
         System.out.println("Zadej rozmer matice: ");
         int m = sc.nextInt();
         int[][] a = new int[m][m];
-        System.out.println("Vypis hodnoty matice: ");
-        Methods.arePositiveAndSumDiagonalsSame(a);
+        System.out.println("Vypis hodnoty matice: "); //JV Chtelo to jeste nacist hodnoty matice
+        Methods.arePositiveAndSumDiagonalsSame(a); //JV metoda vrati true/false - chtelo to vypsat
 
     }
 }

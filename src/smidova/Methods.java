@@ -24,6 +24,7 @@ public class Methods {
             }
 
             System.out.println("");
+            //JV nebylo potreba nic nacitat ani vypisovat, jen zjistit jestli sumy na diagonalach jsou stejne a matice obsahuje jen kladne prvky
         }
     }
 
@@ -39,5 +40,7 @@ public class Methods {
         a = new int[1][3];
         int[] b = {1, 2, 3};
         System.out.println(b);
+        //JV metoda mala jen dostat 1D pole napr 1 2 3 a vratit nove pole 1 2 3 2 1
+        //JV je to metoda logiky neni potreba nacitat ani vypisovat
     }
 }

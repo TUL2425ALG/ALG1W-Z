@@ -25,9 +25,10 @@ public class Marathon {
                 int celkovyCas = casBezceHodiny * HOURS_TO_SECS + casBezceMinuty * MINUTES_TO_SECS + casBezceSekundy;
 
                 System.out.println("Bezec cislo " + cisloBezce + "  " + casBezceHodiny + ":" + casBezceMinuty + "." + casBezceSekundy);
-                double rychlost = TRASADELKA / celkovyCas;
+                double rychlost = TRASADELKA / celkovyCas; //JV chtelo to jeste odecist cas vybehu a prevest na km/h
                 System.out.println("ma rychlost: " + rychlost);
 
+                //JV dost toho chybi
                 System.out.println("");
 
 //                double max = 2.07;
